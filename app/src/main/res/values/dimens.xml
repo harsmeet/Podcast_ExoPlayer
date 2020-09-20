@@ -1,0 +1,35 @@
+<resources>
+
+    <dimen name="xxsmall">2dp</dimen>
+    <dimen name="xsmall">4dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="normal">16dp</dimen>
+    <dimen name="medium">24dp</dimen>
+    <dimen name="large">32dp</dimen>
+    <dimen name="xlarge">48dp</dimen>
+    <dimen name="xxlarge">56dp</dimen>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_layout_height">72dp</dimen>
+    <dimen name="list_item_vertical_margin">8px</dimen>
+    <dimen name="list_item_horizontal_margin">16px</dimen>
+    <dimen name="grid_item_height">160dp</dimen>
+    <dimen name="grid_item_width">120dp</dimen>
+    <dimen name="grid_item_image_size">120dp</dimen>
+    <dimen name="grid_item_title_height">40dp</dimen>
+    <dimen name="grid_item_margin">6px</dimen>
+    <dimen name="list_item_width">320dp</dimen>
+    <dimen name="list_item_height">120dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="progress_bar_size">56dp</dimen>
+    <dimen name="podcast_thumbnail_size">100dp</dimen>
+    <dimen name="appbar_layout_size">216dp</dimen>
+    <dimen name="audio_player_button_size">56dp</dimen>
+    <dimen name="audio_player_margin">10dp</dimen>
+    <dimen name="audio_player_thumb_size">16dp</dimen>
+    <dimen name="corner_radius">0dp</dimen>
+    <dimen name="item_elevation">3dp</dimen>
+
+</resources>

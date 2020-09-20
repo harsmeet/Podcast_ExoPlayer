@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardUseCompatPadding="true"
+    android:elevation="@dimen/item_elevation"
+    app:cardCornerRadius="@dimen/corner_radius">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/touch_selector"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height">
+
+        <ImageView
+            android:id="@+id/podcast_thumbnail"
+            android:layout_width="@dimen/grid_item_image_size"
+            android:layout_height="@dimen/grid_item_image_size"
+            tools:ignore="ContentDescription"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/podcast_artist_name"
+                tools:text="Simon Jones"
+                style="@style/TextStyle.ListItem.Heading"/>
+
+            <TextView
+                android:id="@+id/podcast_collection_name"
+                tools:text="The Man Who Knew To Much"
+                style="@style/TextStyle.ListItem.AllCaps"/>
+
+            <TextView
+                android:id="@+id/podcast_latest_pubdate"
+                tools:text="26 Aug 2016"
+                style="@style/TextStyle.ListItem"/>
+
+            <TextView
+                android:id="@+id/podcast_episode_number"
+                tools:text="Latest episode: 268"
+                style="@style/TextStyle.ListItem"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

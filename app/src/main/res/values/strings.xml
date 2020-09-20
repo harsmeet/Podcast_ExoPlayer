@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Android Podcast Player</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_item_delete">Clear history</string>
+    <string name="menu_item_search">Search</string>
+    <string name="search_hint">Search iTunes podcast catalogue</string>
+    <string name="dialog_negative_button_text">NO</string>
+    <string name="dialog_positive_button_text">YES</string>
+    <string name="dialog_confirmation_prompt_text">Are you sure you want to clear the search history</string>
+    <string name="empty_text_label">No podcasts to show</string>
+    <string name="title_activity_episode">EpisodeActivity</string>
+    <string name="error_connecting_text">Error connecting, try again</string>
+    <string name="no_network_connection">No network connection</string>
+    <string name="podast_desciption">Podcast about generally nothing of importance. Just a way the burn the time while I wait to pick up my social security check. but hey that\'s just the way it is!</string>
+    <string name="feed_not_available">Feed not available, pick another podcast</string>
+    <string name="error_downloading_episode_list">Error downloading episode list</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="download_episode">Download episode</string>
+    <string name="server_error">Server error, try another podcast</string>
+    <string name="publication_date_unknown">Last published: unknown</string>
+</resources>

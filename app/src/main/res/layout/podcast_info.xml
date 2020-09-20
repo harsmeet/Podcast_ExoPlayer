@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:id="@+id/podcast_info"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/normal"
+                android:paddingRight="@dimen/normal"
+                android:paddingLeft="@dimen/normal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/podcast_thumbnail"
+        android:adjustViewBounds="false"
+        android:layout_width="@dimen/podcast_thumbnail_size"
+        android:layout_height="@dimen/podcast_thumbnail_size"
+        android:layout_marginEnd="@dimen/normal"
+        tools:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/podcast_author"
+            style="@style/TextStyle.PodcastInfo.Heading"
+            tools:text="Marc Maron"/>
+
+        <TextView
+            android:id="@+id/podcast_title"
+            tools:text="Another one bites the dust"
+            style="@style/TextStyle.PodcastInfo.AllCaps"/>
+
+        <TextView
+            android:id="@+id/podcast_description"
+            style="@style/TextStyle.PodcastInfo"
+            android:maxLines="3"
+            tools:text="@string/podast_desciption"/>
+
+        <TextView
+            android:id="@+id/podcast_genre"
+            style="@style/TextStyle.PodcastInfo"
+            tools:text="Health and Fitness"/>
+
+    </LinearLayout>
+
+</LinearLayout>
