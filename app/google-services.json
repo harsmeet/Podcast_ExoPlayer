@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "780719377919",
+    "firebase_url": "https://pratilipi-5ad2b.firebaseio.com",
+    "project_id": "pratilipi-5ad2b",
+    "storage_bucket": "pratilipi-5ad2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780719377919:android:f085a952fc7b9b6530ebca",
+        "android_client_info": {
+          "package_name": "com.example.androidpodcastplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780719377919-pd6n20hl7hkmthq3smmhasjb8jv07kd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB57y6vmUbCrO9sRhsr5FGQ6N7ETeM6VV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780719377919-pd6n20hl7hkmthq3smmhasjb8jv07kd6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780719377919:android:5beedb10b779a06130ebca",
+        "android_client_info": {
+          "package_name": "com.pratilipi.mobile.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780719377919-pd6n20hl7hkmthq3smmhasjb8jv07kd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB57y6vmUbCrO9sRhsr5FGQ6N7ETeM6VV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780719377919-pd6n20hl7hkmthq3smmhasjb8jv07kd6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

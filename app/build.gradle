@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
@@ -47,6 +48,12 @@ dependencies {
     debugImplementation 'com.facebook.stetho:stetho:1.3.0'
     debugImplementation 'com.facebook.stetho:stetho-timber:1.3.0'
     debugImplementation 'com.facebook.stetho:stetho-okhttp3:1.3.0'
+
+        // Add the dependencies for the Firebase Cloud Messaging and Analytics libraries
+        implementation 'com.google.firebase:firebase-messaging:20.2.4'
+        implementation 'com.google.firebase:firebase-analytics:17.5.0'
+// Getting a "Could not find" error? Make sure that you've added
+// Google's Maven repository to your project-level build.gradle file
 
     testImplementation 'junit:junit:4.12'
 

@@ -125,8 +125,8 @@
                 android:paddingBottom="@dimen/normal"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_download_dark"
+                android:layout_height="53dp"
+                android:src="@drawable/ic_share"
                 android:background="@drawable/touch_selector"
                 tools:ignore="ContentDescription"/>
 

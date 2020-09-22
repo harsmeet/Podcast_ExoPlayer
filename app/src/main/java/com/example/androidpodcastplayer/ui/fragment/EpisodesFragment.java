@@ -1,8 +1,13 @@
 package com.example.androidpodcastplayer.ui.fragment;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
+
+import com.example.androidpodcastplayer.ui.activity.EpisodesActivity;
+import com.example.androidpodcastplayer.ui.activity.MainActivity;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -12,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,9 +37,19 @@ import com.example.androidpodcastplayer.model.episode.Channel;
 import com.example.androidpodcastplayer.model.episode.Image;
 import com.example.androidpodcastplayer.model.episode.Item;
 import com.example.androidpodcastplayer.model.podcast.Podcast;
+import com.google.firebase.iid.FirebaseInstanceId;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.List;
 import java.util.Locale;
+
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 /**
  * References:
@@ -85,12 +101,17 @@ public class EpisodesFragment extends ContractFragment<EpisodesFragment.Contract
         Podcast podcast = getArguments().getParcelable(Constants.PODCAST_ITEM);
         Channel channel = getArguments().getParcelable(Constants.PODCAST_CHANNEL);
         if (podcast != null && channel != null) {
+
             displayContent(podcast, channel);
             setupAppBar(view);
         }
 
         return view;
     }
+
+
+
+
 
 
     // helper methods
@@ -333,7 +354,19 @@ public class EpisodesFragment extends ContractFragment<EpisodesFragment.Contract
                         break;
                     case R.id.episode_download:
                         // TODO
-                        Utils.showSnackbar(mLayout, "Clicked download");
+
+                        try {
+                            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                            shareIntent.setType("text/plain");
+                            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Tyro.Fit");
+                            String shareMessage = "\n Proadcast - Please Download our App\n\n";
+                            shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+                            startActivity(Intent.createChooser(shareIntent, "choose one"));
+
+                        } catch (Exception e) {
+                            //e.toString();
+                        }
+                        Utils.showSnackbar(mLayout, "Clicked share");
                         break;
                     case R.id.episode_playlist:
                         // TODO
